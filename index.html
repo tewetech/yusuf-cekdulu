@@ -112,8 +112,8 @@
         .form-input { width: 100%; padding: .78rem 1rem; border-radius: 12px; background: #fff; border: 1px solid rgba(74, 48, 37, .24); color: var(--text-dark); font-size: 16px; margin-bottom: .9rem; transition: border-color .18s ease, box-shadow .18s ease; }
         .form-input:focus { outline: none; border-color: var(--wine); box-shadow: 0 0 0 3px rgba(74, 48, 37, .1); }
         .form-input::placeholder { color: #9b8878; }
-        .guestbook-container { max-height: none; overflow: visible; text-align: left; margin-top: 1.25rem; padding-right: 0; overscroll-behavior: auto; }
-        .guestbook-container.is-scrollable { max-height: 420px; max-height: min(420px, 55svh); overflow-y: auto; padding-right: 4px; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; scrollbar-gutter: stable; touch-action: pan-y; }
+        .guestbook-container { max-height: 420px; max-height: min(420px, 55svh); overflow: hidden; text-align: left; margin-top: 1.25rem; padding-right: 4px; overscroll-behavior: auto; scrollbar-gutter: stable; }
+        .guestbook-container.is-scrollable { overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; touch-action: pan-y; }
         .guestbook-container::-webkit-scrollbar { width: 4px; }
         .guestbook-container::-webkit-scrollbar-thumb { background: rgba(74, 48, 37, .35); border-radius: 999px; }
         .guestbook-scroll-toggle { margin-top: .25rem; min-height: 40px; }
