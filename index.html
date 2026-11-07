@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -336,7 +335,6 @@
             <div class="max-w-md mx-auto">
                 <h3 class="font-serif text-3xl text-[#e5c58c] mb-3">Terimakasih</h3>
                 <p class="text-xs md:text-sm text-[#e6d7c7] leading-relaxed mb-6">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
-                <p class="text-xs uppercase tracking-widest text-[#c9b5a1] mb-2">Kami yang berbahagia,</p>
             </div>
         </section>
 
@@ -379,6 +377,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        const MAIN_IMAGE_URL = "https://raw.githubusercontent.com/tewetech/aset/main/Yusuf/IMG_20261107_085931.jpg.jpeg";
+        const COUNTDOWN_IMAGE_URL = "https://raw.githubusercontent.com/tewetech/aset/main/Yusuf/IMG_20261107_090159.jpg.jpeg";
         const GAS_URL = "https://script.google.com/macros/s/AKfycbwoHua2FfrPAKJ_85jsodWxUftwbLHXW95XQ0ryCDkmMOYOkdbDjrt4uVVS2wby3kwz/exec";
         const Sheet = "Undangan";
         const Baris = 6;
@@ -619,10 +619,10 @@
                 backgroundWanitaUrl = fotoWanitaUrl;
                 backgroundPriaUrl = fotoPriaUrl;
                 document.getElementById('fotoWanita').src = fotoWanitaUrl;
-                document.getElementById('backgroundWanita').src = fotoWanitaUrl;
+                document.getElementById('backgroundWanita').src = MAIN_IMAGE_URL;
                 const countdownPreviewImg = document.getElementById('countdownPreviewImg');
-                if (countdownPreviewImg) countdownPreviewImg.src = fotoPriaUrl || fotoWanitaUrl;
-                if (fotoWanitaUrl) door.style.backgroundImage = `url("${fotoWanitaUrl}")`;
+                if (countdownPreviewImg) countdownPreviewImg.src = COUNTDOWN_IMAGE_URL;
+                door.style.backgroundImage = `url("${MAIN_IMAGE_URL}")`;
                 document.getElementById('fotoPria').src = fotoPriaUrl;
                 applyBackgroundImages();
 
